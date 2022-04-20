@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _puts- print a string followed by a new line
+* _puts: print a string followed by a new line
 * @str: string to print
 */
 
@@ -13,5 +13,5 @@ void _puts(char *str)
 	{
 		_putchar(str[i]);
 	}
-	_putchar('/n');
+	_putchar('\n');
 }
