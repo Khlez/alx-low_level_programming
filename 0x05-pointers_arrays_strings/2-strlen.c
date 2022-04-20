@@ -8,6 +8,12 @@
 
 int _strlen(char *s)
 {
-	*s[] = "blue";
+	int i;
+	int length = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		length++;
+	}
 	return (0);
 }
