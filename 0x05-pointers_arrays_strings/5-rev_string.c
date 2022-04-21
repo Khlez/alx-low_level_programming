@@ -5,11 +5,21 @@
 */
 void rev_string(char *s)
 {
-	int j = 0;
-	int reverse = 0;
+	int length, j, i;
+	char v1, v2;
 
-	for (j = 0; s[j] != '\0'; j++)
+	for (length = 0; s[length] != '\0'; length++)
 	{
-		reverse++;
+	}
+	j = length - 1;
+	i = 0;
+	while (j > i)
+	{
+		v1 = s[i];
+		v2 = s[j];
+		s[i] = v2;
+		s[j] = v1;
+		j--;
+		i++;
 	}
 }
